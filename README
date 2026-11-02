@@ -1,0 +1,11 @@
+initiate: a lazy script for my lazy scripts
+===========================================
+
+Install:
+Replace NAME="YOUR NAME" in initiate with your name.
+mkdir -p ~/.local/share/initiate ~/.local/bin
+cp licences/* ~/.local/share/initiate/
+cp initiate ~/.local/bin/
+
+Usage: initiate [-0]
+-0 flag uses 0BSD, ISC otherwise.

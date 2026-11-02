@@ -1,0 +1,23 @@
+#!/bin/sh
+# See LICENCE for copyright and licence details
+
+set -C
+
+NAME="YOUR NAME"
+LICENCE=ISC
+[ "$1" = "-0" ] && LICENCE=0BSD
+
+sed "1s/YEAR/$(date +%Y)/; 1s/NAME/$NAME/" "$HOME/.local/share/initiate/$LICENCE" > LICENSE || exit 1
+
+cat > README <<'EOF'
+myprogram: does things
+======================
+
+git init
+git add FILES
+git commit -m 'Initial commit'
+git remote add origin ORIGIN
+git push -u origin main
+
+See LICENCE for copyright and licence details
+EOF
