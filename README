@@ -3,6 +3,7 @@ initiate: a lazy script for my lazy scripts
 
 Install:
 Replace NAME="YOUR NAME" in initiate with your name.
+chmod +x initiate
 mkdir -p ~/.local/share/initiate ~/.local/bin
 cp licences/* ~/.local/share/initiate/
 cp initiate ~/.local/bin/
